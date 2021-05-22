@@ -405,8 +405,12 @@ height: 120px;
 }
 
 .clients-item {
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--icons-color);
+  width: 170px;
+  height: 92px;
   box-sizing: border-box;
   border-radius: 4px;
 }
