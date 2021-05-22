@@ -154,7 +154,10 @@ body {
   font-style: normal;
 }
 
-.mail-link {
+.mail-tel-link {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -162,30 +165,46 @@ body {
   color: var(--secondary-color);
 }
 
-.mail-link:hover,
-.mail-link:focus {
+.mail-tel-link:hover,
+.mail-tel-link:focus {
   color: var(--accent-color);
 }
 
-.tel-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-color);
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--secondary-color);
+  margin-right: 10px;
 }
 
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--accent-color);
+.call-icon {
+  width: 10px;
+  height: 16px;
+  fill: var(--secondary-color);
+  margin-right: 10px;
 }
 
+.mail-tel-link:hover .mail-icon,
+.mail-tel-link:focus .mail-icon {
+  fill: var(--accent-color);
+}
+
+.mail-tel-link:hover .call-icon,
+.mail-tel-link:focus .call-icon {
+  fill: var(--accent-color);
+}
 /*---------END HEADER---------*/
 
 /*---------HERO---------*/
 
 .hero {
   background-color: var(--background-color);
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ), 
+    url(../images/hero-bg.jpg);
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -324,7 +343,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-    width: 44px;
+  width: 44px;
   height: 44px;
   background-color: transparent;
   border-radius: 50%;
