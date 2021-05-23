@@ -427,7 +427,17 @@ height: 120px;
   fill: var(--icons-color);
 }
 
-.clients-item:hover .clients-icon,
+.clients-list-link:hover .clients-icon,
+.clients-list-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+/* .clients-item:hover .clients-icon,
 .clients-item:focus .clients-icon {
   fill: var(--accent-color);
 }
@@ -435,7 +445,7 @@ height: 120px;
 .clients-item:hover,
 .clients-item:focus {
   border: 1px solid var(--accent-color);
-}
+} */
 
 /*---------END CLIENTS---------*/
 
